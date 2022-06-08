@@ -1,4 +1,3 @@
-import _, { indexOf } from 'lodash';
 import './style.css';
 
 const todos = [
@@ -30,7 +29,7 @@ const from = document.querySelector('#form')
 function component() {
     const element = document.createElement('div');
     element.className = 'main-container';
-     todos.forEach((todo, index) => { 
+     todos.forEach((todo) => { 
       // Lodash, now imported by this script
     element.innerHTML += ` <hr>
     <div draggable="true" class = 'task'>
@@ -68,7 +67,6 @@ function footer() {
  const cd = document.querySelectorAll('.check')
  const todo_des = document.querySelectorAll('.todo_description')
 
-let i = 0
 cd.forEach((n, i) => n.addEventListener('click', () => {
  console.log(n.checked) 
  console.log(i)
@@ -81,7 +79,7 @@ cd.forEach((n, i) => n.addEventListener('click', () => {
 let dragSrcEl = ''
 
 // Drag and drop functionality
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
 
     function handleDragStart(e) {
       this.style.opacity = '0.4';
@@ -94,7 +92,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
   
-    function handleDragEnd(e) {
+    function handleDragEnd() {
       this.style.opacity = '1';
      
       items.forEach(function (item) {
@@ -107,11 +105,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       return false;
     }
   
-    function handleDragEnter(e) {
+    function handleDragEnter() {
       this.classList.add('over');
     }
   
-    function handleDragLeave(e) {
+    function handleDragLeave() {
       this.classList.remove('over');
     }
 
