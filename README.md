@@ -17,16 +17,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-you can clone the file [@Todo](https://github.com/Ashe546/todo_list)
+you can clone the file [Todo](https://github.com/Ashe546/todo_list)
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@ashe](https://github.com/ashe546)
-- Twitter: [@ashe](https://twitter.com/ashenafi56)
-- LinkedIn: [Abigail Nyakara](https://www.linkedin.com/in/ashe)
+- GitHub: [Ashe](https://github.com/ashe546)
+- Twitter: [Ashe](https://twitter.com/ashenafi56)
+- LinkedIn: [Ashe](https://www.linkedin.com/in/ashe)
 
 
 ## Show your support
