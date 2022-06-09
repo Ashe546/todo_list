@@ -2,28 +2,31 @@ import './style.css';
 
 // Aray of objects
 
-const todos = [
-  {
-    description: 'submit my project for review',
+let todos =   JSON.parse(localStorage.getItem('todo')) || [{description: "2nd project about to end", completed: "", index: 2}];
+
+//add todo task
+
+
+const addBookTodo = document.querySelector('#form');
+
+function addTodos(e) {
+  const addTodo = document.querySelector('.add_todo');
+  const todoObject = {
+    description: addTodo.value,
     completed: 'checked',
-    index: 1,
-  },
-  {
-    description: '2nd project about to end',
-    completed: '',
-    index: 2,
-  },
-  {
-    description: 'add the drag and drop functionality',
-    completed: 'checked',
-    index: 3,
-  },
-  {
-    description: 'Almost done',
-    completed: '',
     index: 4,
-  },
-];
+};
+todos.push(todoObject);
+localStorage.setItem('todo', JSON.stringify(todos));
+alert(todoObject.description)
+e.preventDefault();
+window.location.reload();
+return todos
+}
+
+
+
+addBookTodo.addEventListener('submit', addTodos);
 
 // render html file
 const from = document.querySelector('#form');
@@ -35,7 +38,7 @@ function component() {
     // Lodash, now imported by this script
     element.innerHTML += ` <hr>
     <div draggable="true" class = 'task'>
-    <input value = '${todo.description}' type="checkbox" class ='check'>
+    <input value = '${todo.description}' type="checkbox" class = 'check'>
     <p class = 'todo_description'>${todo.description}</p>
     <img src="./svg/icons8-edit.svg" alt="svg" class = 'svg'>
     </div>`;
@@ -64,17 +67,7 @@ from.appendChild(tryd());
 from.appendChild(component());
 from.appendChild(footer());
 
-// Check for checke or not
-const cd = document.querySelectorAll('.check');
-const todoDes = document.querySelectorAll('.todo_description');
 
-cd.forEach((n, i) => n.addEventListener('click', () => {
-  console.log(n.checked);
-  console.log(i);
-  if (n.checked === true) {
-    todoDes[i].classList.add('checked');
-  } else { todoDes[i].classList.remove('checked'); }
-}));
 
 let dragSrcEl = '';
 
@@ -111,6 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dragSrcEl !== this) {
       dragSrcEl.innerHTML = this.innerHTML;
       this.innerHTML = e.dataTransfer.getData('text/html');
+
+      const cd = document.querySelectorAll('.check');
+      const todoDes = document.querySelectorAll('.todo_description');
+      
+      cd.forEach((n, i) => n.addEventListener('click', () => {
+        console.log(n.checked);
+        console.log(i);
+        if (n.checked === true) {
+          todoDes[i].classList.add('checked');
+        } else { todoDes[i].classList.remove('checked'); }
+      }));
+
     }
 
     return false;
@@ -127,19 +132,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-//add todo task
+// Check for checked or not
+const cd = document.querySelectorAll('.check');
+const todoDes = document.querySelectorAll('.todo_description');
 
-const addTodo = document.querySelector('.add_todo');
-const addBookTodo = document.querySelector('#submit_but');
+cd.forEach((n, i) => n.addEventListener('click', () => {
+  console.log(n.checked);
+  console.log(i);
+  if (n.checked === true) {
+    todoDes[i].classList.add('checked');
+  } else { todoDes[i].classList.remove('checked'); }
+}));
 
-function addTodos() {
-  const todoObject = {
-    description: addTodo.value,
-    completed: 'checked',
-    index: 4,
-};
-todos.push(todoObject);
-console.log(todos)
-}
-
-addBookTodo.addEventListener('click', addTodos);

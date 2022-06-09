@@ -26,6 +26,10 @@ body {
   cursor: move;
 }
 
+.task:hover {
+  background-color: orange;
+}
+
 hr {
   width: 100%;
 }
