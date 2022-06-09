@@ -55,7 +55,7 @@ function tryd() {
 function footer() {
   const element = document.createElement('div');
   element.className = 'footer';
-  element.innerHTML += `<button>Clear all complited</button>
+  element.innerHTML += `<button id = 'submit_but'>Clear all complited</button>
     `;
   return element;
 }
@@ -126,3 +126,20 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('drop', handleDrop);
   });
 });
+
+//add todo task
+
+const addTodo = document.querySelector('.add_todo');
+const addBookTodo = document.querySelector('#submit_but');
+
+function addTodos() {
+  const todoObject = {
+    description: addTodo.value,
+    completed: 'checked',
+    index: 4,
+};
+todos.push(todoObject);
+console.log(todos)
+}
+
+addBookTodo.addEventListener('click', addTodos);
