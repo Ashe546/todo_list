@@ -2,10 +2,9 @@ import './style.css';
 
 // Aray of objects
 
-let todos =   JSON.parse(localStorage.getItem('todo')) || [{description: "2nd project about to end", completed: "", index: 2}];
+const todos = JSON.parse(localStorage.getItem('todo')) || [{ description: '2nd project about to end', completed: '', index: 2 }];
 
-//add todo task
-
+// add todo task
 
 const addBookTodo = document.querySelector('#form');
 
@@ -15,16 +14,14 @@ function addTodos(e) {
     description: addTodo.value,
     completed: 'checked',
     index: 4,
-};
-todos.push(todoObject);
-localStorage.setItem('todo', JSON.stringify(todos));
-alert(todoObject.description)
-e.preventDefault();
-window.location.reload();
-return todos
+  };
+  todos.push(todoObject);
+  localStorage.setItem('todo', JSON.stringify(todos));
+  alert(todoObject.description);
+  e.preventDefault();
+  window.location.reload();
+  return todos;
 }
-
-
 
 addBookTodo.addEventListener('submit', addTodos);
 
@@ -67,8 +64,6 @@ from.appendChild(tryd());
 from.appendChild(component());
 from.appendChild(footer());
 
-
-
 let dragSrcEl = '';
 
 // Drag and drop functionality
@@ -107,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const cd = document.querySelectorAll('.check');
       const todoDes = document.querySelectorAll('.todo_description');
-      
+
       cd.forEach((n, i) => n.addEventListener('click', () => {
         console.log(n.checked);
         console.log(i);
@@ -115,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
           todoDes[i].classList.add('checked');
         } else { todoDes[i].classList.remove('checked'); }
       }));
-
     }
 
     return false;
@@ -143,4 +137,3 @@ cd.forEach((n, i) => n.addEventListener('click', () => {
     todoDes[i].classList.add('checked');
   } else { todoDes[i].classList.remove('checked'); }
 }));
-
