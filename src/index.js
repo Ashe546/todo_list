@@ -1,11 +1,9 @@
 import './style.css';
 
 // Aray of objects
-
 const todos = JSON.parse(localStorage.getItem('todo')) || [{ description: '2nd project about to end', completed: '', index: 2 }];
 
 // add todo task
-
 const addBookTodo = document.querySelector('#form');
 
 function addTodos(e) {
