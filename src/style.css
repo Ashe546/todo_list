@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  padding: 10px 10px;
+  width: 40%;
+  box-shadow: 0 0 20px 2px #17054d;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  cursor: move;
+}
+
+.task:hover {
+  background-color: orange;
+}
+
+hr {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add_todo {
+  border: none;
+  background-color: azure;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(194, 193, 193);
+  padding: 20px 20px;
+}
+
+button {
+  border: none;
+  background-color: rgb(194, 193, 193);
+  font-size: large;
+}
+
+.svg {
+  margin-left: auto;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.task.over {
+  border: 3px dotted #666;
+}
