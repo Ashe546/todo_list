@@ -41,7 +41,8 @@ hr {
 
 .todo_description {
   border: none;
-  background-color: azure;
+  background-color: inherit;
+  width: 95%;
 }
 
 .todo_description:hover {

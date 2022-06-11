@@ -5,7 +5,7 @@ const addTodos = (e) => {
   const todoObject = {
     description: addTodo.value,
     completed: 'checked',
-    index: 4,
+    index: todos.length,
   };
   todos.push(todoObject);
   localStorage.setItem('todo', JSON.stringify(todos));
