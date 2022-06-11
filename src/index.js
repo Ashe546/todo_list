@@ -1,136 +1,78 @@
 import './style.css';
+import { component, footer } from './module/html_component';
+import addTodos from './module/add_todo';
+import drag from './module/drag_drop';
+import todos from './module/todo';
 
-// Aray of objects
-const todos = JSON.parse(localStorage.getItem('todo')) || [{ description: '2nd project about to end', completed: '', index: 2 }];
+console.log(drag);
 
 // add todo task
-const addBookTodo = document.querySelector('#form');
+const addTodoList = document.querySelector('#form1');
 
-function addTodos(e) {
-  const addTodo = document.querySelector('.add_todo');
-  const todoObject = {
-    description: addTodo.value,
-    completed: 'checked',
-    index: 4,
-  };
-  todos.push(todoObject);
-  localStorage.setItem('todo', JSON.stringify(todos));
-  alert(todoObject.description);
-  e.preventDefault();
-  window.location.reload();
-  return todos;
-}
-
-addBookTodo.addEventListener('submit', addTodos);
+addTodoList.addEventListener('submit', addTodos);
 
 // render html file
 const from = document.querySelector('#form');
+const todoLists = document.querySelector('#todo_lists');
 
-function component() {
-  const element = document.createElement('div');
-  element.className = 'main-container';
-  todos.forEach((todo) => {
-    // Lodash, now imported by this script
-    element.innerHTML += ` <hr>
-    <div draggable="true" class = 'task'>
-    <input value = '${todo.description}' type="checkbox" class = 'check'>
-    <p class = 'todo_description'>${todo.description}</p>
-    <img src="./svg/icons8-edit.svg" alt="svg" class = 'svg'>
-    </div>`;
-  });
-  return element;
-}
-
-function tryd() {
-  const element = document.createElement('div');
-  element.className = 'header';
-  element.innerHTML += `<h1>My todo list</h1>
-    <input type = 'text' class = 'add_todo' placeholder = 'add todo list here'>
-    `;
-  return element;
-}
-
-function footer() {
-  const element = document.createElement('div');
-  element.className = 'footer';
-  element.innerHTML += `<button id = 'submit_but'>Clear all complited</button>
-    `;
-  return element;
-}
-
-from.appendChild(tryd());
-from.appendChild(component());
+todoLists.appendChild(component());
 from.appendChild(footer());
 
-let dragSrcEl = '';
+const todoDescription = document.querySelectorAll('.todo_description');
+const move = document.querySelectorAll('.svg');
+const deleteItem = document.querySelectorAll('.svg_delete');
 
-// Drag and drop functionality
-document.addEventListener('DOMContentLoaded', () => {
-  function handleDragStart(e) {
-    this.style.opacity = '0.4';
-    dragSrcEl = this;
-    e.dataTransfer.effectAllowed = 'move';
-    e.dataTransfer.setData('text/html', this.innerHTML);
+// togle b/n delete and edit icon
 
-    return dragSrcEl;
-  }
+const taskList = document.querySelectorAll('.task');
 
-  function handleDragEnd() {
-    this.style.opacity = '1';
-  }
+taskList.forEach((n, i) => n.addEventListener('mouseover', () => {
+  deleteItem[i].classList.remove('active');
+  move[i].classList.add('active');
+}, 100));
 
-  function handleDragOver(e) {
-    e.preventDefault();
-    return false;
-  }
+taskList.forEach((n, i) => n.addEventListener('mouseout', () => {
+  deleteItem[i].classList.add('active');
+  move[i].classList.remove('active');
+}, 100));
 
-  function handleDragEnter() {
-    this.classList.add('over');
-  }
+// remove todo list
+const removetodo = (inde) => {
+  const aw = JSON.parse(localStorage.getItem('todo'));
+  const remove = todos.splice(inde, 1);
 
-  function handleDragLeave() {
-    this.classList.remove('over');
-  }
-
-  function handleDrop(e) {
-    e.stopPropagation();
-    if (dragSrcEl !== this) {
-      dragSrcEl.innerHTML = this.innerHTML;
-      this.innerHTML = e.dataTransfer.getData('text/html');
-
-      const cd = document.querySelectorAll('.check');
-      const todoDes = document.querySelectorAll('.todo_description');
-
-      cd.forEach((n, i) => n.addEventListener('click', () => {
-        console.log(n.checked);
-        console.log(i);
-        if (n.checked === true) {
-          todoDes[i].classList.add('checked');
-        } else { todoDes[i].classList.remove('checked'); }
-      }));
+  const arrtest = [];
+  for (let i = 0; i <= todos.length; i += 1) {
+    if (aw[inde].index < aw[i].index) {
+      arrtest.push('yes');
+      todos[i - 1].index = todos[i - 1].index - 1;
+    } else {
+      arrtest.push('no', aw[i].index);
     }
-
-    return false;
   }
+  localStorage.setItem('todo', JSON.stringify(todos));
+  window.location.reload();
+  return remove || false;
+};
 
-  const items = document.querySelectorAll('.main-container .task');
-  items.forEach((item) => {
-    item.addEventListener('dragstart', handleDragStart);
-    item.addEventListener('dragover', handleDragOver);
-    item.addEventListener('dragenter', handleDragEnter);
-    item.addEventListener('dragleave', handleDragLeave);
-    item.addEventListener('dragend', handleDragEnd);
-    item.addEventListener('drop', handleDrop);
-  });
-});
+deleteItem.forEach((n, i) => n.addEventListener('click', () => { removetodo(i); }));
+
+// edit todo list
+todoDescription.forEach((n, i) => n.addEventListener('keyup', (e) => {
+  const index = e.target.value;
+  if (e.key === 'Enter') {
+    todos[i].description = index;
+    localStorage.setItem('todo', JSON.stringify(todos));
+    window.location.reload();
+    e.preventDefault();
+  }
+}));
 
 // Check for checked or not
 const cd = document.querySelectorAll('.check');
 const todoDes = document.querySelectorAll('.todo_description');
 
 cd.forEach((n, i) => n.addEventListener('click', () => {
-  console.log(n.checked);
-  console.log(i);
   if (n.checked === true) {
     todoDes[i].classList.add('checked');
   } else { todoDes[i].classList.remove('checked'); }

@@ -23,7 +23,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  cursor: move;
 }
 
 .task:hover {
@@ -38,6 +37,16 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.todo_description {
+  border: none;
+  background-color: inherit;
+  width: 95%;
+}
+
+.todo_description:hover {
+  background-color: orange;
 }
 
 .add_todo {
@@ -62,6 +71,11 @@ button {
 
 .svg {
   margin-left: auto;
+  cursor: move;
+}
+
+.svg_delete {
+  margin-left: auto;
 }
 
 .checked {
@@ -70,4 +84,8 @@ button {
 
 .task.over {
   border: 3px dotted #666;
+}
+
+.active {
+  display: none;
 }
