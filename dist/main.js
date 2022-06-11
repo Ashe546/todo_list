@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  position: fixed;\\r\\n  position: absolute;\\r\\n  height: 100%;\\r\\n  width: 100%;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\n#main-container {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  background-color: azure;\\r\\n  padding: 10px 10px;\\r\\n  width: 40%;\\r\\n  box-shadow: 0 0 20px 2px #17054d;\\r\\n}\\r\\n\\r\\n.task {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  align-items: center;\\r\\n  gap: 1rem;\\r\\n  cursor: move;\\r\\n}\\r\\n\\r\\n.task:hover {\\r\\n  background-color: orange;\\r\\n}\\r\\n\\r\\nhr {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.header {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.add_todo {\\r\\n  border: none;\\r\\n  background-color: azure;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.footer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: center;\\r\\n  background-color: rgb(194, 193, 193);\\r\\n  padding: 20px 20px;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n  border: none;\\r\\n  background-color: rgb(194, 193, 193);\\r\\n  font-size: large;\\r\\n}\\r\\n\\r\\n.svg {\\r\\n  margin-left: auto;\\r\\n}\\r\\n\\r\\n.checked {\\r\\n  text-decoration: line-through;\\r\\n}\\r\\n\\r\\n.task.over {\\r\\n  border: 3px dotted #666;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-skeleton/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  position: fixed;\\r\\n  position: absolute;\\r\\n  height: 100%;\\r\\n  width: 100%;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\n#main-container {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  background-color: azure;\\r\\n  padding: 10px 10px;\\r\\n  width: 40%;\\r\\n  box-shadow: 0 0 20px 2px #17054d;\\r\\n}\\r\\n\\r\\n.task {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  align-items: center;\\r\\n  gap: 1rem;\\r\\n}\\r\\n\\r\\n.task:hover {\\r\\n  background-color: orange;\\r\\n}\\r\\n\\r\\nhr {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.header {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.add_todo {\\r\\n  border: none;\\r\\n  background-color: azure;\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.footer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: center;\\r\\n  background-color: rgb(194, 193, 193);\\r\\n  padding: 20px 20px;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n  border: none;\\r\\n  background-color: rgb(194, 193, 193);\\r\\n  font-size: large;\\r\\n}\\r\\n\\r\\n.svg {\\r\\n  margin-left: auto;\\r\\n  cursor: move;\\r\\n}\\r\\n\\r\\n.svg_delete {\\r\\n  margin-left: auto;\\r\\n}\\r\\n\\r\\n.checked {\\r\\n  text-decoration: line-through;\\r\\n}\\r\\n\\r\\n.task.over {\\r\\n  border: 3px dotted #666;\\r\\n}\\r\\n\\r\\n.active {\\r\\n  display: none;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-skeleton/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -37,6 +37,26 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://webpack-skeleton/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/svg/icons8-delete.svg":
+/*!***********************************!*\
+  !*** ./src/svg/icons8-delete.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"76fedeb576158a6b6f8c70c7ec5ce363.svg\");\n\n//# sourceURL=webpack://webpack-skeleton/./src/svg/icons8-delete.svg?");
+
+/***/ }),
+
+/***/ "./src/svg/ui.png":
+/*!************************!*\
+  !*** ./src/svg/ui.png ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"615378ef508c177b964329c6168acd4c.png\");\n\n//# sourceURL=webpack://webpack-skeleton/./src/svg/ui.png?");
 
 /***/ }),
 
@@ -116,7 +136,47 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n// Aray of objects\nconst todos = JSON.parse(localStorage.getItem('todo')) || [{ description: '2nd project about to end', completed: '', index: 2 }];\n\n// add todo task\nconst addBookTodo = document.querySelector('#form');\n\nfunction addTodos(e) {\n  const addTodo = document.querySelector('.add_todo');\n  const todoObject = {\n    description: addTodo.value,\n    completed: 'checked',\n    index: 4,\n  };\n  todos.push(todoObject);\n  localStorage.setItem('todo', JSON.stringify(todos));\n  alert(todoObject.description);\n  e.preventDefault();\n  window.location.reload();\n  return todos;\n}\n\naddBookTodo.addEventListener('submit', addTodos);\n\n// render html file\nconst from = document.querySelector('#form');\n\nfunction component() {\n  const element = document.createElement('div');\n  element.className = 'main-container';\n  todos.forEach((todo) => {\n    // Lodash, now imported by this script\n    element.innerHTML += ` <hr>\n    <div draggable=\"true\" class = 'task'>\n    <input value = '${todo.description}' type=\"checkbox\" class = 'check'>\n    <p class = 'todo_description'>${todo.description}</p>\n    <img src=\"./svg/icons8-edit.svg\" alt=\"svg\" class = 'svg'>\n    </div>`;\n  });\n  return element;\n}\n\nfunction tryd() {\n  const element = document.createElement('div');\n  element.className = 'header';\n  element.innerHTML += `<h1>My todo list</h1>\n    <input type = 'text' class = 'add_todo' placeholder = 'add todo list here'>\n    `;\n  return element;\n}\n\nfunction footer() {\n  const element = document.createElement('div');\n  element.className = 'footer';\n  element.innerHTML += `<button id = 'submit_but'>Clear all complited</button>\n    `;\n  return element;\n}\n\nfrom.appendChild(tryd());\nfrom.appendChild(component());\nfrom.appendChild(footer());\n\nlet dragSrcEl = '';\n\n// Drag and drop functionality\ndocument.addEventListener('DOMContentLoaded', () => {\n  function handleDragStart(e) {\n    this.style.opacity = '0.4';\n    dragSrcEl = this;\n    e.dataTransfer.effectAllowed = 'move';\n    e.dataTransfer.setData('text/html', this.innerHTML);\n\n    return dragSrcEl;\n  }\n\n  function handleDragEnd() {\n    this.style.opacity = '1';\n  }\n\n  function handleDragOver(e) {\n    e.preventDefault();\n    return false;\n  }\n\n  function handleDragEnter() {\n    this.classList.add('over');\n  }\n\n  function handleDragLeave() {\n    this.classList.remove('over');\n  }\n\n  function handleDrop(e) {\n    e.stopPropagation();\n    if (dragSrcEl !== this) {\n      dragSrcEl.innerHTML = this.innerHTML;\n      this.innerHTML = e.dataTransfer.getData('text/html');\n\n      const cd = document.querySelectorAll('.check');\n      const todoDes = document.querySelectorAll('.todo_description');\n\n      cd.forEach((n, i) => n.addEventListener('click', () => {\n        console.log(n.checked);\n        console.log(i);\n        if (n.checked === true) {\n          todoDes[i].classList.add('checked');\n        } else { todoDes[i].classList.remove('checked'); }\n      }));\n    }\n\n    return false;\n  }\n\n  const items = document.querySelectorAll('.main-container .task');\n  items.forEach((item) => {\n    item.addEventListener('dragstart', handleDragStart);\n    item.addEventListener('dragover', handleDragOver);\n    item.addEventListener('dragenter', handleDragEnter);\n    item.addEventListener('dragleave', handleDragLeave);\n    item.addEventListener('dragend', handleDragEnd);\n    item.addEventListener('drop', handleDrop);\n  });\n});\n\n// Check for checked or not\nconst cd = document.querySelectorAll('.check');\nconst todoDes = document.querySelectorAll('.todo_description');\n\ncd.forEach((n, i) => n.addEventListener('click', () => {\n  console.log(n.checked);\n  console.log(i);\n  if (n.checked === true) {\n    todoDes[i].classList.add('checked');\n  } else { todoDes[i].classList.remove('checked'); }\n}));\n\n\n//# sourceURL=webpack://webpack-skeleton/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _module_html_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/html_component */ \"./src/module/html_component.js\");\n/* harmony import */ var _module_add_todo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./module/add_todo */ \"./src/module/add_todo.js\");\n/* harmony import */ var _module_drag_drop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module/drag_drop */ \"./src/module/drag_drop.js\");\n/* harmony import */ var _module_todo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./module/todo */ \"./src/module/todo.js\");\n\n\n\n\n\n\nconsole.log(_module_drag_drop__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\n// add todo task\nconst addTodoList = document.querySelector('#form');\n\naddTodoList.addEventListener('submit', _module_add_todo__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n// render html file\nconst from = document.querySelector('#form');\n\nfrom.appendChild((0,_module_html_component__WEBPACK_IMPORTED_MODULE_1__.header)());\nfrom.appendChild((0,_module_html_component__WEBPACK_IMPORTED_MODULE_1__.component)());\nfrom.appendChild((0,_module_html_component__WEBPACK_IMPORTED_MODULE_1__.footer)());\n\nconst remove = document.querySelector('.todo_description')\nconst move = document.querySelector('.svg')\nconst delete_item = document.querySelector('.svg_delete')\n\nremove.addEventListener('click', () => {\n  console.log('clicked')\n  delete_item.classList.remove('active')\n  move.classList.add('active')\n})\n\ndelete_item.addEventListener('click', ()=> {\n  console.log('cleked')\n})\n// Check for checked or not\nconst cd = document.querySelectorAll('.check');\nconst todoDes = document.querySelectorAll('.todo_description');\n\ncd.forEach((n, i) => n.addEventListener('click', () => {\n  if (n.checked === true) {\n    todoDes[i].classList.add('checked');\n  } else { todoDes[i].classList.remove('checked'); }\n}));\n\n\n//# sourceURL=webpack://webpack-skeleton/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/module/add_todo.js":
+/*!********************************!*\
+  !*** ./src/module/add_todo.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo */ \"./src/module/todo.js\");\n\n\nconst addTodos = (e) => {\n  const addTodo = document.querySelector('.add_todo');\n  const todoObject = {\n    description: addTodo.value,\n    completed: 'checked',\n    index: 4,\n  };\n  _todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"].push(todoObject);\n  localStorage.setItem('todo', JSON.stringify(_todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n  e.preventDefault();\n  window.location.reload();\n  return _todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addTodos);\n\n//# sourceURL=webpack://webpack-skeleton/./src/module/add_todo.js?");
+
+/***/ }),
+
+/***/ "./src/module/drag_drop.js":
+/*!*********************************!*\
+  !*** ./src/module/drag_drop.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet dragSrcEl = '';\n\n// Drag and drop functionality\nconst drag = document.addEventListener('DOMContentLoaded', () => {\n  function handleDragStart(e) {\n    this.style.opacity = '0.4';\n    dragSrcEl = this;\n    e.dataTransfer.effectAllowed = 'move';\n    e.dataTransfer.setData('text/html', this.innerHTML);\n\n    return dragSrcEl;\n  }\n\n  function handleDragEnd() {\n    this.style.opacity = '1';\n  }\n\n  function handleDragOver(e) {\n    e.preventDefault();\n    return false;\n  }\n\n  function handleDragEnter() {\n    this.classList.add('over');\n  }\n\n  function handleDragLeave() {\n    this.classList.remove('over');\n  }\n\n  function handleDrop(e) {\n    e.stopPropagation();\n    if (dragSrcEl !== this) {\n      dragSrcEl.innerHTML = this.innerHTML;\n      this.innerHTML = e.dataTransfer.getData('text/html');\n\n      const cd = document.querySelectorAll('.check');\n      const todoDes = document.querySelectorAll('.todo_description');\n\n      cd.forEach((n, i) => n.addEventListener('click', () => {\n        if (n.checked === true) {\n          todoDes[i].classList.add('checked');\n        } else { todoDes[i].classList.remove('checked'); }\n      }));\n    }\n\n    return false;\n  }\n\n  const items = document.querySelectorAll('.main-container .task');\n  items.forEach((item) => {\n    item.addEventListener('dragstart', handleDragStart);\n    item.addEventListener('dragover', handleDragOver);\n    item.addEventListener('dragenter', handleDragEnter);\n    item.addEventListener('dragleave', handleDragLeave);\n    item.addEventListener('dragend', handleDragEnd);\n    item.addEventListener('drop', handleDrop);\n  });\n});\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (drag);\n\n//# sourceURL=webpack://webpack-skeleton/./src/module/drag_drop.js?");
+
+/***/ }),
+
+/***/ "./src/module/html_component.js":
+/*!**************************************!*\
+  !*** ./src/module/html_component.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"component\": () => (/* binding */ component),\n/* harmony export */   \"footer\": () => (/* binding */ footer),\n/* harmony export */   \"header\": () => (/* binding */ header)\n/* harmony export */ });\n/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo */ \"./src/module/todo.js\");\n/* harmony import */ var _svg_ui_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../svg/ui.png */ \"./src/svg/ui.png\");\n/* harmony import */ var _svg_icons8_delete_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../svg/icons8-delete.svg */ \"./src/svg/icons8-delete.svg\");\n\r\n\r\n\r\n\r\n\r\nconst component = () => {\r\n    const element = document.createElement('div');\r\n    element.className = 'main-container';\r\n    _todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"].forEach((todo, i) => {\r\n      // Lodash, now imported by this script\r\n      element.innerHTML += ` <hr>\r\n      <div draggable=\"true\" class = 'task' contenteditable=\"true\">\r\n      <input value = '${todo.description}' type=\"checkbox\" class = 'check'>\r\n      <p class = 'todo_description'>${todo.description}</p>\r\n      <img src=\"${_svg_ui_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}\" alt=\"svg\" class = 'svg'>\r\n      <img src=\"${_svg_icons8_delete_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]}\" alt=\"svg\" class = 'svg_delete active' onclick=\"removetodo(${i})\">\r\n      </div>`;\r\n    });\r\n    return element;\r\n  }\r\n\r\nfunction removetodo(i) {\r\n    _todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"].splice(i, 1);\r\n     localStorage.setItem('todo', JSON.stringify(_todo__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\r\n     window.location.reload();\r\n   }\r\n   \r\n  \r\n  const header = () => {\r\n    const element = document.createElement('div');\r\n    element.className = 'header';\r\n    element.innerHTML += `<h1>My todo list</h1>\r\n      <input type = 'text' class = 'add_todo' placeholder = 'add todo list here'>\r\n      `;\r\n    return element;\r\n  }\r\n  \r\n  const footer =  () => {\r\n    const element = document.createElement('div');\r\n    element.className = 'footer';\r\n    element.innerHTML += `<button id = 'submit_but'>Clear all complited</button>\r\n      `;\r\n    return element;\r\n  }\r\n\r\n  \n\n//# sourceURL=webpack://webpack-skeleton/./src/module/html_component.js?");
+
+/***/ }),
+
+/***/ "./src/module/todo.js":
+/*!****************************!*\
+  !*** ./src/module/todo.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst todos = JSON.parse(localStorage.getItem('todo')) || [{ description: '2nd project about to end', completed: '', index: 2 }];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (todos);\n\n//# sourceURL=webpack://webpack-skeleton/./src/module/todo.js?");
 
 /***/ })
 
@@ -171,6 +231,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +257,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
