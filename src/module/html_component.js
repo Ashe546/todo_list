@@ -18,15 +18,6 @@ const component = () => {
   return element;
 };
 
-// const header = () => {
-//   const element = document.createElement('div');
-//   element.className = 'header';
-//   element.innerHTML += `<h1>My todo list</h1>
-//     <input type = 'text' class = 'add_todo' placeholder = 'add todo list here'>
-//     `;
-//   return element;
-// }
-
 const footer = () => {
   const element = document.createElement('div');
   element.className = 'footer';

@@ -4,7 +4,7 @@ const addTodos = (e) => {
   const addTodo = document.querySelector('.add_todo');
   const todoObject = {
     description: addTodo.value,
-    completed: 'checked',
+    completed: false,
     index: todos.length,
   };
   todos.push(todoObject);
