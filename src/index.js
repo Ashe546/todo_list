@@ -75,5 +75,35 @@ const todoDes = document.querySelectorAll('.todo_description');
 cd.forEach((n, i) => n.addEventListener('click', () => {
   if (n.checked === true) {
     todoDes[i].classList.add('checked');
-  } else { todoDes[i].classList.remove('checked'); }
+    todos[i].completed = true;
+  } else {
+    todoDes[i].classList.remove('checked');
+    todos[i].completed = false;
+  }
+
+  localStorage.setItem('todo', JSON.stringify(todos));
 }));
+
+window.onload = () => {
+  const clear = todos.filter((todo) => todo.completed !== false);
+  clear.forEach((c, i) => {
+    todoDes[clear[i].index].classList.add('checked');
+  });
+};
+
+// clear all completed
+
+const removeAll = document.querySelector('.footer');
+
+removeAll.addEventListener('click', (e) => {
+  const clear = todos.filter((todo) => todo.completed !== true);
+
+  clear.forEach((c, i) => {
+    clear[i].index = i;
+  });
+
+  e.preventDefault();
+  localStorage.setItem('todo', JSON.stringify(clear));
+  window.location.reload();
+  return clear || false;
+});
