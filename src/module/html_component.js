@@ -9,7 +9,7 @@ const component = () => {
     // Lodash, now imported by this script
     element.innerHTML += ` <hr>
       <div draggable="true" class = 'task'>
-      <input value = '${todo.description}' type="checkbox" class = 'check'>
+      <input type="checkbox" class = 'check'>
       <input class = 'todo_description' contenteditable="true" value = '${todo.description}'></input>
       <img src="${img}" alt="svg" class = 'svg'>
       <img src="${img2}" alt="svg" class = 'svg_delete active' value = ${i}>
