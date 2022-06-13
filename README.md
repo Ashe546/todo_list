@@ -19,6 +19,10 @@ To get a local copy up and running follow these simple example steps.
 
 you can clone the file [Todo](https://github.com/Ashe546/todo_list)
 
+## Live Demo
+
+- [App Live Link](https://ashe546.github.io/todo_list/)
+
 
 ## Authors
 
